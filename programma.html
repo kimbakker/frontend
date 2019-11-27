@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lowlands</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/94e2caafcd.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Coiny|Hanalei+Fill&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="hoofdmenu">
+            <ul>
+                <li><a href="#">Blokkenschema</a></li>
+                <li><a href="#">Nieuws</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Programma</a></li>
+                <li><a href="index.html"><img src="images/logo.png" alt="logo" class="logo-nav"></a></li>
+                <li><a href="#">Tickets</a></li>
+                <li><a href="#">Plattegrond</a></li>
+                <li><a href="#">English</a></li>
+                <li><a href="#">Meer</a></li>
+                <li><input type="text" placeholder="Zoeken"></li>
+                <!--                <li><input type="text" placeholder="Zoeken"><i class="fas fa-search fa-flip-horizontal"></i></li>-->
+            </ul>
+        </nav>
+        <nav class="hoofdmenu responsive">
+            <ul>
+                <li><a href="index.html"><img src="images/logo.png" alt="logo" class="logo-nav"></a></li>
+                <li><a href="programma.html">Programma</a></li>
+                <li><a href="#">Tickets</a></li>
+                <li class="menu-meer"><a href="">Meer <i class="fas fa-arrow-up pijl-omhoog"></i></a>
+                    <ul class="hoofdmenu responsive dropdown">
+                        <li><a href="#">Blokkenschema</a></li>
+                        <li><a href="#">Nieuws</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Plattegrond</a></li>
+                        <li><a href="#">English</a></li>
+                        <li><a href="#">Extra</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="filter-sorteren">
+            <ul class="sorteren-nav">
+                <li>Alles</li>
+                <li><a href="#">x</a></li>
+                <li><a href="#">Sorteer op: <span>Populariteit </span><i class="fas fa-arrow-up pijl-omhoog"></i></a></li>
+            </ul>
+        </section>
+        <section class="filter-categorie">
+            <nav class="categorie">
+                <h2 class="categorie-titel">Categorieën <i class="fas fa-chevron-down"></i></h2>
+                <!--                https://css-tricks.com/solved-with-css-dropdown-menus/-->
+                <ul class="menu-categorie">
+                    <li><a href="#">Alles</a></li>
+                    <li><a href="#">Muziek <i class="fas fa-chevron-down"></i></a>
+                        <!--https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox-->
+                        <ul class="menu-categorie-muziek">
+                            <li><input type="checkbox" id="dance" name="dance">
+                                <label for="dance">Dance</label></li>
+                            <li><input type="checkbox" id="hacienda" name="hacienda">
+                                <label for="hacienda">Hacienda</label></li>
+                            <li><input type="checkbox" id="indie" name="indie">
+                                <label for="indie">Indie</label></li>
+                            <li><input type="checkbox" id="klassiek" name="klassiek">
+                                <label for="klassiek">Klassiek</label></li>
+                            <li><input type="checkbox" id="pop" name="pop">
+                                <label for="pop">Pop</label></li>
+                            <li><input type="checkbox" id="soul" name="soul">
+                                <label for="soul">Soul</label></li>
+                            <li><input type="checkbox" id="singer" name="singer">
+                                <label for="singer">Singer / Songwriter</label></li>
+                            <li><input type="checkbox" id="world" name="world">
+                                <label for="world">World / Roots</label></li>
+                            <li><input type="checkbox" id="elec" name="elec">
+                                <label for="elec">Electronic</label></li>
+                            <li><input type="checkbox" id="hiphop" name="dance">
+                                <label for="dance">Hiphop</label></li>
+                            <li><input type="checkbox" id="jazz" name="jazz">
+                                <label for="jazz">Jazz</label></li>
+                            <li><input type="checkbox" id="metal" name="metal">
+                                <label for="metal">Metal</label></li>
+                            <li><input type="checkbox" id="rock" name="rock">
+                                <label for="rock">Rock</label></li>
+                            <li><input type="checkbox" id="urban" name="urban">
+                                <label for="urban">Urban</label></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Wetenschap</a></li>
+                    <li><a href="#">Comady</a></li>
+                    <li><a href="#">Theater en dans</a></li>
+                    <li><a href="#">Literatuur</a></li>
+                    <li><a href="#">Filosofie</a></li>
+                    <li><a href="#">Specials</a></li>
+                    <li><a href="#">Buitentheater</a></li>
+                    <li><a href="#">Film</a></li>
+                    <li><a href="#">Kunst</a></li>
+
+
+                </ul>
+            </nav>
+            <section class="artiesten">
+                <article class="artiest">
+                    <ul class="meta-data-artiest">
+                        <li><img src="images/hartje.png" alt=""></li>
+                        <li><img src="images/geluid.png" alt=""></li>
+                        <li class="categorie-naam">Pop</li>
+                    </ul>
+                    <h3>Allround hiphopkampioen</h3>
+                    <h2>Anderson, Paak</h2>
+                    <img src="images/artiesten/anderson.png" alt="" class="artiest-foto">
+                </article>
+                <article class="artiest">
+                    <ul class="meta-data-artiest">
+                        <li><img src="images/hartje.png" alt=""></li>
+                        <li><img src="images/geluid.png" alt=""></li>
+                        <li class="categorie-naam">Pop</li>
+                    </ul>
+                    <h3>Allround hiphopkampioen</h3>
+                    <h2>Anderson, Paak</h2>
+                    <img src="images/artiesten/anderson.png" alt="" class="artiest-foto">
+                </article>
+            </section>
+        </section>
+    </main>
+    
+<script src="scripts/script.js"></script>    </body>
+</html>
