@@ -15,5 +15,9 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox-
 CCS animatie hover menu:
 https://codepen.io/martinwolf/pen/eNNdme
 
+Icon peil omhoog:
+https://fontawesome.com/icons/arrow-up?style=solid
 
+Icon peil omlaag:
+https://fontawesome.com/icons/chevron-down?style=solid
 
