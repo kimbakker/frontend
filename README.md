@@ -21,3 +21,5 @@ https://fontawesome.com/icons/arrow-up?style=solid
 Icon peil omlaag:
 https://fontawesome.com/icons/chevron-down?style=solid
 
+Flexbox elementen:
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
