@@ -1,4 +1,5 @@
 /*ALGEMEEN*/
+
 body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
@@ -8,8 +9,12 @@ main {
     text-align: center;
     padding: 0 9vw;
 }
+.active-item {
+    border-bottom: 2px solid #fff;
+}
 
-/*TEKST*/
+/*TYPOGRAFIE*/
+
 header h1,
 h2 {
     color: #fff;
@@ -17,11 +22,11 @@ h2 {
 
 h1 {
     font-size: 50px;
-    margin-bottom: 10px
+    margin: 0 0 10px 0;
 }
 
 h2 {
-    color: black;
+    color: #000;
 }
 
 /*BUTTONS*/
@@ -37,67 +42,63 @@ h2 {
 }
 
 /*HEADER*/
+
 header {
-    background: #4CCF66;
+    display: flex;
+    justify-content: space-between;
+    background-color: #0125CC;
     text-align: center;
-    padding-bottom: 30px;
+}
+
+.logo {
+    height: 40px;
+    line-height: 50px;
+    padding: 10px 0 10px 20px;
+}
+
+.hamburger {
+    padding: 0 0.5em;
+    font-size: 1.5em;
+    line-height: 50px;
+    display: inline-block;
+    z-index: 2;
+}
+
+i.fa.fa-bars.hamburger {
+    padding: 15px 20px 10px 0;
+    color: #fff;
 }
 
 nav.hoofdmenu {
+    position: absolute;
+    width: 100%;
     background: #0125CC;
-    text-align: center;
-    padding: 10px 0;
-
-}
-
-nav.hoofdmenu ul {
-    margin: 0;
-    list-style: none;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap:
-}
-
-nav.hoofdmenu ul li {
-    padding: 10px 0;
-}
-
-nav.hoofdmenu ul li a {
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 800;
-}
-
-/*https://codepen.io/martinwolf/pen/eNNdme*/
-nav.hoofdmenu ul li a::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    background: rgb(255, 255, 255);
-    transition: width .3s;
-}
-
-nav.hoofdmenu ul li a:hover::after {
-    width: 100%;
-}
-
-nav.hoofdmenu ul li a.active:after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 2px;
-    background: rgb(255, 255, 255);
-}
-
-.hoofdmenu.responsive {
     display: none;
 }
 
+nav.hoofdmenu:hover {
+    display: block;
+}
+
+nav.hoofdmenu a {
+    display: block;
+    line-height: 50px;
+    text-align: center;
+}
+
+.hamburger:hover ~ nav.hoofdmenu {
+    display: block;
+}
+
 .logo-nav {
-    width: 20px;
+    width: 30px;
     height: auto;
+    display: none;
+    vertical-align: middle;
+}
+
+.logo-nav-begin {
+    display: none;
 }
 
 input[type="text"] {
@@ -105,6 +106,7 @@ input[type="text"] {
     font-family: 'Open Sans', sans-serif;
     border: none;
     color: #fff;
+    margin-top: 16px;
 }
 
 input[type="text"]::-webkit-input-placeholder {
@@ -115,24 +117,52 @@ input[type="text"]::-webkit-input-placeholder {
     font-size: 15px;
 }
 
-.fa-search {
+nav.hoofdmenu li {
+    padding: 10px 0;
+    list-style: none;
+}
+
+nav.hoofdmenu li a {
     color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+/*https://codepen.io/martinwolf/pen/eNNdme*/
+nav.hoofdmenu li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: rgb(255, 255, 255);
+    transition: width .3s;
+}
+
+nav.hoofdmenu li a:hover::after {
+    width: 100%;
+}
+
+nav.hoofdmenu li a.active:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: rgb(255, 255, 255);
 }
 
 /*HOME*/
-.items-home {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap:
-}
 
+.intro-lowlands {
+    background-color: #4CCF66;
+    padding: 20px 0;
+}
 
 /*PROGRAMMA*/
 
 .filter-sorteren {
     background-color: #a3a3a3;
 }
-
 .sorteren-nav {
     display: flex;
     justify-content: space-between;
@@ -140,98 +170,69 @@ input[type="text"]::-webkit-input-placeholder {
     text-decoration: none;
     padding: 15px 0 15px 0;
 }
-
 .sorteren-nav li {
     padding: 0 10px;
     font-weight: 600;
     color: #fff
 }
-
 .sorteren-nav li a {
     text-decoration: none;
     color: #fff;
 }
-
 .sorteren-nav li:last-of-type {
     flex-grow: 1;
     text-align: right;
     font-size: 14px;
 }
-
-.sorteren-nav li:last-of-type span {
+.sorteren-nav li:last-of-type span{
     text-decoration: underline;
     font-size: 17px
 }
-
 .pijl-omhoog {
     font-size: 17px;
 }
-
 .filter-categorie {
     display: flex;
     justify-content: flex-start;
-/*    flex-wrap: wrap;*/
+    flex-wrap: wrap;
 }
-
 nav.categorie {
     background: #4CCF66;
     margin-right: 20px;
     display: inline-block;
     text-align: left;
-    padding: 1.5em;
-    width: 41%;
-    height: 100%;
 }
-
 nav.categorie li a {
     text-align: left;
     padding: 0;
 }
-.menu-categorie {
-    opacity: 0;
-    height: 0;
-/*    visibility: hidden;*/
-    transition: all .3s ease;
-}
-.uitklapeffect1 {
-    opacity: 1;
-    height: 100%;
-/*    visibility: visible;*/
-}
-
 .menu-categorie li {
     padding: 0;
 }
-
 ul.menu-categorie {
     padding-left: 20px;
 }
-
 .artiesten {
+    flex-grow: 1;
     display: flex;
     justify-content: space-between;
-    height: 100%;
+    flex-wrap: wrap:
 }
-
 .artiest {
     background: #4CCF66;
     padding: 20px;
-    width: 45%;
 }
-
 .meta-data-artiest {
     display: flex;
     justify-content: flex-start;
     list-style: none;
     padding: 0;
 }
-
 .meta-data-artiest li img {
     height: 25px;
     width: auto;
     margin-right: 20px;
 }
-
 .categorie-naam {
     margin-left: auto;
     background: #000;
@@ -239,52 +240,91 @@ ul.menu-categorie {
     font-weight: 600;
     padding: 10px 20px;
 }
-
 .artiest {
     color: #fff;
     text-align: left;
     margin-bottom: 0px;
+    min-width: 200px;
+    max-width: 900px;
+    max-height: 450px;
 }
-
 .artiest h2 {
     font-family: 'Coiny', cursive;
     color: #fff;
     font-size: 30px;
     margin: 0 0 20px;
 }
-
 .artiest h3 {
     margin-bottom: 0px;
     font-size: 12px;
 }
-
 .artiest-foto {
-    max-width: 100%;
-    /*
+    width: 500px;
+/*
     height: 200px;
     width: auto;
 */
 }
-
+/*
+nav.categorie {
+    display: flex;
+    flex-direction:row-reverse;
+}
+*/
 
 
 /*RESPONSIVE*/
+
+@media only screen and (min-width: 768px) {
+    .hamburger {
+        display: none !important;
+    }
+
+    nav.hoofdmenu {
+        position: static;
+        display: flex;
+        background: none;
+        clear: none;
+        flex: 1;
+        justify-content: space-evenly;
+        background: #0125CC;
+        width: inherit;
+
+    }
+
+    nav.hoofdmenu:hover {
+        display: flex;
+    }
+
+    nav.hoofdmenu a {
+        padding: 0 1em;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .logo-nav {
+        display: inline;
+    }
+}
+
 @media screen and (max-width: 1000px) {
-    nav.hoofdmenu ul li a {
-        font-size: 15px;
+    nav.hoofdmenu li a {
+        font-size: 13px;
     }
 
     input[type="text"]::-webkit-input-placeholder {
-        font-size: 15px;
+        font-size: 13px;
     }
 }
 
 @media screen and (max-width: 850px) {
-    nav.hoofdmenu ul li {
+    nav.hoofdmenu li {
         padding: 0px 0;
     }
 
-    nav.hoofdmenu ul li a {
+    nav.hoofdmenu li a {
         font-size: 12px;
     }
 
@@ -293,60 +333,32 @@ ul.menu-categorie {
     }
 }
 
-@media screen and (max-width: 787px) {
-    nav.hoofdmenu {
-        display: none;
+@media only screen and (max-width: 768px) {
+    input[type="text"] {
+        margin-top: 0px;
     }
 
-    .hoofdmenu.responsive {
-        display: inherit;
-        background: #0125CC;
-    }
-
-/*
-    .hoofdmenu.responsive.dropdown {
-        display: none;
-    }
-*/
-
-    /*
-    .menu-meer:hover ~ .hoofdmenu.responsive.dropdown {
-        display: block;
-    }
-
-    .menu-meer:hover {}
-*/
-
-    li.menu-meer {
-        display: block;
-        transition-duration: 0.5s;
-    }
-    li.menu-meer:hover {
-        cursor: pointer;
-    }
-    ul li.menu-meer ul {
-        visibility: hidden;
-        opacity: 0;
-        position: absolute;
-        transition: all 0.5s ease;
-        margin-top: 1rem;
-        right: 10px;
-/*        left: 0;*/
-        display: none;
-    }
-    ul li.menu-meer:hover > ul,
-    ul li.menu-meer ul:hover {
-        visibility: visible;
-        opacity: 1;
-        display: block;
+    input[type="text"]::-webkit-input-placeholder {
+        font-size: 12px;
         text-align: left;
-        padding: 10px 10px 10px 10px;
     }
-    ul li.menu-meer ul li {
-        clear: both;
-        width: 100%;
+
+    nav.hoofdmenu {
+        padding: 0 0 20px 20px
     }
-    .artiesten {
-        flex-wrap: wrap;
+
+    nav.hoofdmenu li a {
+        text-align: left;
+    }
+
+    nav.hoofdmenu li {
+        text-align: left;
+    }
+
+    .logo-nav-begin {
+        padding-top: 10px;
+        width: 30px;
+        height: auto;
+        display: inherit;
     }
 }
