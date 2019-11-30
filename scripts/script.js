@@ -16,6 +16,15 @@ function uitklapMenuMuziek() {
 
 document.querySelector('.muziek').addEventListener("click", uitklapMenuMuziek);
 
+//https://codepen.io/bav/pen/opvMmx
+var options
+
+options = {
+  autoplay: true,
+  muted: true
+}
+video = videojs('video-1', options);
+
 
 
 

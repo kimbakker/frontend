@@ -30,7 +30,9 @@ h2 {
 h2.categorie-titel {
     margin: 0;
     color: #fff;
-    padding: 10px 0 0 15px;
+    padding: 10px 15px 0 15px;
+    display: flex;
+    justify-content: space-between;
 }
 
 /*BUTTONS*/
@@ -183,7 +185,7 @@ nav.categorie li a {
     padding: 0;
 }
 i.fas.fa-chevron-down {
-    margin-left: 54px;
+/*    margin-left: 54px;*/
     font-size: 32px;
 }
 i.fas.fa-chevron-down.sub {
@@ -249,7 +251,10 @@ li.dark-green {
     padding: 20px;
     width: 45%;
 }
-
+.artiest h2 a {
+    color: #fff;
+    text-decoration: none;
+}
 .meta-data-artiest {
     display: flex;
     justify-content: flex-start;
@@ -293,7 +298,67 @@ li.dark-green {
     max-width: 100%;
 }
 
+/*ARTIEST DETAIL PAGINA*/
 
+#video-1 {
+    width: 100%;
+}
+.artiets-detail {
+    height: 180px;
+}
+.artiest.informatie {
+    margin: 0 auto;
+    width: 65%;
+}
+.artiesten.informatie {
+    display: block;
+    margin: 30px 0 30px 0;
+}
+.artiest.informatie h2 {
+    font-size: 5em;
+}
+.artiest.informatie h3 {
+    font-size: 1.5em;
+}
+section.artiest-last {
+    background: blue;
+    width: 65%;
+    margin: 0 auto;
+    display: flex;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+iframe.twenty-video {
+    width: 630px;
+    height: 355px;
+}
+.socials {
+    text-align: left;
+    list-style: none;
+}
+.socials li a {
+    color: #fff;
+    text-decoration: none;
+}
+.socials h4 {
+    color: 
+    #fff;
+    margin: 0 0 10px 0;
+}
+.artiest.informatie ul.meta-data-artiest li img {
+    height: 40px;
+}
+.artiest-footer {
+    margin: 0 auto;
+    background-image: url(../images/artiesten/twenty.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 300px;
+}
+#video-2 {
+    width: 100%;
+    border: 20px solid #4CCF66;
+}
 
 /*RESPONSIVE*/
 @media screen and (max-width: 1600px) {
