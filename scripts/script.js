@@ -16,15 +16,27 @@ function uitklapMenuMuziek() {
 
 document.querySelector('.muziek').addEventListener("click", uitklapMenuMuziek);
 
+
+
 //https://codepen.io/bav/pen/opvMmx
-var options
+//var options
+//
+//options = {
+//    autoplay: true,
+//    muted: true
+//}
+//video = videojs('video-1', options);
 
-options = {
-  autoplay: true,
-  muted: true
+
+
+//http://cmd.camp/2017%20javascript/front-end%20coding/4-extra-tips-2
+//Docent Koen GLU
+var favoriet = document.querySelector('.fave');
+
+function like() {
+    favoriet.setAttribute('src', 'images/hartje-rood.png');
 }
-video = videojs('video-1', options);
 
-
+favoriet.addEventListener('click', like);
 
 
