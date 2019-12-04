@@ -30,7 +30,7 @@ document.querySelector('.muziek').addEventListener("click", uitklapMenuMuziek);
 
 
 //http://cmd.camp/2017%20javascript/front-end%20coding/4-extra-tips-2
-//Docent Koen GLU
+//Koen Borghols  setAttribute 
 var favoriet = document.querySelector('.fave');
 
 function like() {
