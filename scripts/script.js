@@ -17,18 +17,6 @@ function uitklapMenuMuziek() {
 document.querySelector('.muziek').addEventListener("click", uitklapMenuMuziek);
 
 
-
-//https://codepen.io/bav/pen/opvMmx
-//var options
-//
-//options = {
-//    autoplay: true,
-//    muted: true
-//}
-//video = videojs('video-1', options);
-
-
-
 //http://cmd.camp/2017%20javascript/front-end%20coding/4-extra-tips-2
 //Koen Borghols  setAttribute 
 var favoriet = document.querySelector('.fave');
