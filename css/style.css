@@ -11,6 +11,7 @@ main {
     border-bottom: 2px solid #fff;
 }
 
+
 /*TEKST*/
 header h1, h2 {
     color: #fff;
@@ -34,6 +35,7 @@ h2.categorie-titel {
     display: flex;
     justify-content: space-between;
 }
+
 
 /*BUTTONS*/
 
@@ -120,6 +122,7 @@ input[type="text"]::-webkit-input-placeholder {
     color: #fff;
 }
 
+
 /*HOME*/
 .items-home {
     display: flex;
@@ -127,12 +130,12 @@ input[type="text"]::-webkit-input-placeholder {
     flex-wrap: wrap:
 }
 
+
 /*PROGRAMMA*/
 
 .filter-sorteren {
     background-color: #a3a3a3;
 }
-
 .sorteren-nav {
     display: flex;
     justify-content: space-between;
@@ -140,38 +143,31 @@ input[type="text"]::-webkit-input-placeholder {
     text-decoration: none;
     padding: 15px 0 15px 0;
 }
-
 .sorteren-nav li {
     padding: 0 10px;
     font-weight: 600;
     color: #fff
 }
-
 .sorteren-nav li a {
     text-decoration: none;
     color: #fff;
 }
-
 .sorteren-nav li:last-of-type {
     flex-grow: 1;
     text-align: right;
     font-size: 14px;
 }
-
 .sorteren-nav li:last-of-type span {
     text-decoration: underline;
     font-size: 17px
 }
-
 .pijl-omhoog {
     font-size: 17px;
 }
-
 .filter-categorie {
     display: flex;
     justify-content: flex-start;
 }
-
 nav.categorie {
     background: #4CCF66;
     margin-right: 20px;
@@ -267,7 +263,6 @@ li.dark-green {
     width: auto;
     margin-right: 20px;
 }
-
 .categorie-naam {
     margin-left: auto;
     background: #000;
@@ -275,25 +270,21 @@ li.dark-green {
     font-weight: 600;
     padding: 10px 20px;
 }
-
 .artiest {
     color: #fff;
     text-align: left;
     margin-bottom: 0px;
 }
-
 .artiest h2 {
     font-family: 'Coiny', cursive;
     color: #fff;
     font-size: 30px;
     margin: 0 0 20px;
 }
-
 .artiest h3 {
     margin-bottom: 0px;
     font-size: 12px;
 }
-
 .artiest-foto {
     max-width: 100%;
 }
@@ -359,6 +350,51 @@ iframe.twenty-video {
     width: 100%;
     border: 20px solid #4CCF66;
 }
+
+
+/*FORM*/
+
+form section {
+    display: flex;
+}
+fieldset {
+    width: 100%;
+    background: #0125CC;
+    color: #fff;
+    border: none;
+}
+fieldset:first-child, fieldset:last-child {
+    background: #4CCF66;
+}
+legend {
+    padding-top: 36px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.reveal-if-active {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+}
+input[type="radio"]:checked ~ .reveal-if-active {
+  opacity: 1;
+  max-height: 100px; /* little bit of a magic number :( */
+  overflow: visible;
+}
+input[type="submit"] {
+    margin-top: 10px;
+    display: inline-block;
+    background: #fff;
+    padding: 10px 20px;
+    color: #0125CC;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    border: 2px solid #0125CC;
+    font-size: 15px;
+}
+
 
 /*RESPONSIVE*/
 @media screen and (max-width: 1600px) {
@@ -482,3 +518,15 @@ iframe.twenty-video {
     i.fas.fa-chevron-down.sub {
         margin-left: 240px;
     }
+}
+
+/*Responsive pro */
+
+/*https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme*/
+@media (prefers-color-scheme: dark) {
+  main   { background:  #000; color: #fff; }
+}
+
+@media (prefers-color-scheme: light) {
+  main  { background: #fff; color:  #000; }
+}

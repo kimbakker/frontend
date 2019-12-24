@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lowlands</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/94e2caafcd.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Coiny|Hanalei+Fill&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="hoofdmenu">
+            <ul>
+                <li><a href="#">Blokkenschema</a></li>
+                <li><a href="#">Nieuws</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Programma</a></li>
+                <li><a href="index.html"><img src="images/logo.png" alt="logo" class="logo-nav"></a></li>
+                <li><a href="#" class="active-item">Tickets</a></li>
+                <li><a href="#">Plattegrond</a></li>
+                <li><a href="#">English</a></li>
+                <li><a href="#">Meer</a></li>
+            </ul>
+        </nav>
+        <nav class="hoofdmenu responsive">
+            <ul>
+                <li><a href="index.html"><img src="images/logo.png" alt="logo" class="logo-nav"></a></li>
+                <li><a href="programma.html">Programma</a></li>
+                <li><a href="#">Tickets</a></li>
+                <li class="menu-meer"><a href="">Meer <i class="fas fa-arrow-up pijl-omhoog fa-rotate-180"></i></a>
+                    <ul class="hoofdmenu responsive dropdown">
+                        <li><a href="#">Blokkenschema</a></li>
+                        <li><a href="#">Nieuws</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Plattegrond</a></li>
+                        <li><a href="#">English</a></li>
+                        <li><a href="#">Extra</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <h1 class="pagina-titel">Tickets</h1>
+    </header>
+    <main>
+        <form>
+           <section>
+            <fieldset>
+                <legend>Soort Ticket</legend>
+            <input type="radio" name="festivalticket" id="festivalticket">
+            <label for="festivalticket">Festival ticket</label>
+<!--                <input type="radio" id="festivalticket" name="ticket" value="festivalticket">-->
+<!--                <label for="festivalticket">Festival Ticket</label>-->
+                <input type="radio" id="groepsticket" name="ticket" value="groepsticket">
+                <label for="festivalticket">Groepsticket</label>
+                <input type="radio" id="gespreid" name="ticket" value="gespreid">
+                <label for="festivalticket">Gespreid betalen</label>
+            </fieldset>
+            <fieldset>
+                <legend>Verblijf</legend>
+                <input type="radio" id="groepscamping" name="verblijf" value="groepscamping">
+                <label for="groepscamping">Groepscamping</label>
+                <input type="radio" id="camper" name="verblijf" value="camper">
+                <label for="camper">Camper Camping</label>
+                <input type="radio" id="glamm" name="verblijf" value="glamm">
+                <label for="glamm">Gllam-camp</label>
+                <input type="radio" id="ntv" name="verblijf" value="ntv">
+                <label for="ntv">n.v.t.</label>
+            </fieldset>
+            <fieldset>
+                <legend>Vervoer</legend>
+                <input type="radio" id="parkeren" name="vervoer" value="parkeren">
+                <label for="parkeren">Parkeerticket</label>
+                <input type="radio" id="bus" name="vervoer" value="bus">
+                <label for="bus">Bus Service</label>
+                <input type="radio" id="trein" name="vervoer" value="trein">
+                <label for="trein">Trein</label>
+                <input type="radio" id="ntv" name="vervoer" value="ntv">
+                <label for="ntv">n.v.t.</label>
+            </fieldset>
+            </section>
+            <input type="radio" name="festivalticket" id="festivalticket">
+            <label for="festivalticket">Festival ticket</label>
+
+
+            <fieldset class="reveal-if-active">
+                <legend>Aantal Tickets</legend>
+                <input type="radio" id="festivalticket" name="festivalticket" value="festivalticket">
+                <label for="festivalticket">Festival Ticket</label>
+                <input type="radio" id="groepsticket" name="groepsticket" value="groepsticket">
+                <label for="festivalticket">Groepsticket</label>
+                <input type="radio" id="gespreid" name="gespreid" value="gespreid">
+                <label for="festivalticket">Gespreid betalen</label>
+            </fieldset>
+
+            <input type="submit">
+        </form>
+
+        <form>
+            <input type="radio" name="festivalticket" id="festivalticket">
+            <label for="festivalticket">Festival ticket</label>
+
+
+            <fieldset class="reveal-if-active">
+                <legend>Aantal Tickets</legend>
+                <input type="radio" id="festivalticket" name="festivalticket" value="festivalticket">
+                <label for="festivalticket">Festival Ticket</label>
+                <input type="radio" id="groepsticket" name="groepsticket" value="groepsticket">
+                <label for="festivalticket">Groepsticket</label>
+                <input type="radio" id="gespreid" name="gespreid" value="gespreid">
+                <label for="festivalticket">Gespreid betalen</label>
+            </fieldset>
+        </form>
+
+    </main>
+
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>

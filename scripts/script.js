@@ -17,8 +17,6 @@ function uitklapMenuMuziek() {
 document.querySelector('.muziek').addEventListener("click", uitklapMenuMuziek);
 
 
-//http://cmd.camp/2017%20javascript/front-end%20coding/4-extra-tips-2
-//Koen Borghols  setAttribute 
 var favoriet = document.querySelector('.fave');
 
 function like() {
@@ -28,3 +26,29 @@ function like() {
 favoriet.addEventListener('click', like);
 
 
+
+
+//http://cmd.camp/2017%20javascript/front-end%20coding/4-extra-tips-2
+//Koen Borghols  setAttribute 
+//
+//var favoriet = document.querySelectorAll('.fave');
+//
+//forEach(favoriet, function ()) {
+//
+//    function like() {
+//        favoriet.setAttribute.('src', 'images/hartje-rood.png');
+//    }
+//}
+//favoriet.addEventListener('click', like);
+
+
+
+
+//var navItems = document.querySelectorAll("#main-nav a");
+//
+//forEach(navItems, function(i, el) {
+//  el.addEventListener("click", function() {
+//    document.querySelector("#main-nav .active").classList.remove("active");
+//    this.classList.add("active");
+//  })
+//});
