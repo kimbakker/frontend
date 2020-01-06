@@ -50,42 +50,64 @@
         <h1 class="pagina-titel">Tickets</h1>
     </header>
     <main>
+        <!--       https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form-->
         <form>
-           <section>
-            <fieldset>
-                <legend>Soort Ticket</legend>
-            <input type="radio" name="festivalticket" id="festivalticket">
-            <label for="festivalticket">Festival ticket</label>
-<!--                <input type="radio" id="festivalticket" name="ticket" value="festivalticket">-->
-<!--                <label for="festivalticket">Festival Ticket</label>-->
-                <input type="radio" id="groepsticket" name="ticket" value="groepsticket">
-                <label for="festivalticket">Groepsticket</label>
-                <input type="radio" id="gespreid" name="ticket" value="gespreid">
-                <label for="festivalticket">Gespreid betalen</label>
-            </fieldset>
-            <fieldset>
-                <legend>Verblijf</legend>
-                <input type="radio" id="groepscamping" name="verblijf" value="groepscamping">
-                <label for="groepscamping">Groepscamping</label>
-                <input type="radio" id="camper" name="verblijf" value="camper">
-                <label for="camper">Camper Camping</label>
-                <input type="radio" id="glamm" name="verblijf" value="glamm">
-                <label for="glamm">Gllam-camp</label>
-                <input type="radio" id="ntv" name="verblijf" value="ntv">
-                <label for="ntv">n.v.t.</label>
-            </fieldset>
-            <fieldset>
-                <legend>Vervoer</legend>
-                <input type="radio" id="parkeren" name="vervoer" value="parkeren">
-                <label for="parkeren">Parkeerticket</label>
-                <input type="radio" id="bus" name="vervoer" value="bus">
-                <label for="bus">Bus Service</label>
-                <input type="radio" id="trein" name="vervoer" value="trein">
-                <label for="trein">Trein</label>
-                <input type="radio" id="ntv" name="vervoer" value="ntv">
-                <label for="ntv">n.v.t.</label>
-            </fieldset>
+            <section>
+                <fieldset>
+                    <legend>Soort Ticket</legend>
+                    <input type="radio" name="ticket" id="festivalticket">
+                    <label for="festivalticket">Festival ticket</label>
+                    <input type="radio" id="groepsticket" name="ticket" value="groepsticket">
+                    <label for="festivalticket">Groepsticket</label>
+                    <input type="radio" id="gespreid" name="ticket" value="gespreid">
+                    <label for="festivalticket">Gespreid betalen</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Verblijf</legend>
+                    <input type="radio" id="groepscamping" name="verblijf" value="groepscamping">
+                    <label for="groepscamping">Groepscamping</label>
+                    <input type="radio" id="camper" name="verblijf" value="camper">
+                    <label for="camper">Camper Camping</label>
+                    <input type="radio" id="glamm" name="verblijf" value="glamm">
+                    <label for="glamm">Gllam-camp</label>
+                    <input type="radio" id="ntv" name="verblijf" value="ntv">
+                    <label for="ntv">n.v.t.</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Vervoer</legend>
+                    <input type="radio" id="parkeren" name="vervoer" value="parkeren">
+                    <label for="parkeren">Parkeerticket</label>
+                    <input type="radio" id="bus" name="vervoer" value="bus">
+                    <label for="bus">Bus Service</label>
+                    <input type="radio" id="trein" name="vervoer" value="trein">
+                    <label for="trein">Trein</label>
+                    <input type="radio" id="ntv" name="vervoer" value="ntv">
+                    <label for="ntv">n.v.t.</label>
+                </fieldset>
             </section>
+            <section>
+                <fieldset>
+                    <legend>Aantal tickets</legend>
+                    <select name="aantal" id="ticketaantal">
+                        <option value="">-</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Aantal tickets</legend>
+                    <label>Voornaam</label>
+                    <input name="submitted-name" autocomplete="name" size="30" required>
+                    <label>Achternaam</label>
+                    <input name="submitted-name" autocomplete="name" size="30" required><br>
+                    <label for="email">E-mailadres</label>
+                    <input type="email" id="email"size="30" required>
+                </fieldset>
+            </section>
+            <!--
             <input type="radio" name="festivalticket" id="festivalticket">
             <label for="festivalticket">Festival ticket</label>
 
@@ -99,24 +121,9 @@
                 <input type="radio" id="gespreid" name="gespreid" value="gespreid">
                 <label for="festivalticket">Gespreid betalen</label>
             </fieldset>
+-->
 
             <input type="submit">
-        </form>
-
-        <form>
-            <input type="radio" name="festivalticket" id="festivalticket">
-            <label for="festivalticket">Festival ticket</label>
-
-
-            <fieldset class="reveal-if-active">
-                <legend>Aantal Tickets</legend>
-                <input type="radio" id="festivalticket" name="festivalticket" value="festivalticket">
-                <label for="festivalticket">Festival Ticket</label>
-                <input type="radio" id="groepsticket" name="groepsticket" value="groepsticket">
-                <label for="festivalticket">Groepsticket</label>
-                <input type="radio" id="gespreid" name="gespreid" value="gespreid">
-                <label for="festivalticket">Gespreid betalen</label>
-            </fieldset>
         </form>
 
     </main>

@@ -371,7 +371,6 @@ legend {
     font-weight: bold;
     font-size: 18px;
 }
-
 .reveal-if-active {
   opacity: 0;
   max-height: 0;
