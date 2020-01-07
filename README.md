@@ -1,6 +1,8 @@
 # frontend
 Mijn Lowlands website
 
+https://kimbakker.github.io/frontend/
+
 Bronnen
 
 Logo Lowlands, icon hart, icon geluid, artiesten afbeeldingen:
