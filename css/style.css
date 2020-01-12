@@ -187,7 +187,8 @@ i.fas.fa-chevron-down {
 i.fas.fa-chevron-down.sub {
     margin: 0;
     font-size: 25px;
-    margin-left: 153px;
+    position: relative;
+    right: 0;
 }
 .menu-categorie {
     opacity: 0;
@@ -398,9 +399,14 @@ input[type="submit"] {
 /*RESPONSIVE*/
 @media screen and (max-width: 1600px) {
 
+/*
     i.fas.fa-chevron-down {
         margin-left: 24px;
     }
+    i.fas.fa-chevron-down.sub {
+        margin-left: 122px;
+    }
+*/
 }
 @media screen and (max-width: 1000px) {
     nav.hoofdmenu ul li a {
