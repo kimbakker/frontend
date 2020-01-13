@@ -124,6 +124,7 @@ input[type="text"]::-webkit-input-placeholder {
 
 
 /*HOME*/
+
 .items-home {
     display: flex;
     justify-content: center;
@@ -258,7 +259,6 @@ li.dark-green {
     list-style: none;
     padding: 0;
 }
-
 .meta-data-artiest li img {
     height: 25px;
     width: auto;
@@ -296,11 +296,13 @@ li.dark-green {
     width: 100%;
 }
 .artiets-detail {
-    height: 180px;
+    height: 15vw;
+    background: none;
 }
 .artiest.informatie {
     margin: 0 auto;
     width: 65%;
+    margin-bottom: 20px;
 }
 .artiesten.informatie {
     display: block;
@@ -372,6 +374,7 @@ legend {
     font-weight: bold;
     font-size: 18px;
 }
+/*
 .reveal-if-active {
   opacity: 0;
   max-height: 0;
@@ -379,8 +382,17 @@ legend {
 }
 input[type="radio"]:checked ~ .reveal-if-active {
   opacity: 1;
-  max-height: 100px; /* little bit of a magic number :( */
+  max-height: 100px;  little bit of a magic number :( 
   overflow: visible;
+}
+*/
+/*https://developer.mozilla.org/en-US/docs/Web/CSS/:checked*/
+input[type="radio"]:checked {
+  box-shadow: 0 0 0 3px #fff;
+}
+input:focus {
+  background: white;
+  color: #0125CC;
 }
 input[type="submit"] {
     margin-top: 10px;
@@ -394,25 +406,49 @@ input[type="submit"] {
     border: 2px solid #0125CC;
     font-size: 15px;
 }
+fieldset.aantal-tickets {
+    width: 35%;
+    height: 100px;
+}
+fieldset p {
+    text-align: left;
+}
+fieldset:invalid p.feedback {
+  display:none;
+}
+fieldset:valid p.feedback {
+  display: block;
+  padding: .25em;
+  color: white;
+  background: #4ccf66;
+}
+
 
 
 /*RESPONSIVE*/
-@media screen and (max-width: 1600px) {
-
-/*
-    i.fas.fa-chevron-down {
-        margin-left: 24px;
+@media screen and (max-width: 1400px) {
+    .artiest.informatie {
+        width: 95%;
     }
-    i.fas.fa-chevron-down.sub {
-        margin-left: 122px;
+    section.artiest-last {
+        width: 95%;
     }
-*/
-}
+    .artiest.informatie ul.meta-data-artiest li img {
+        height: 25px;
+    }
+    .artiest.informatie h3 {
+        font-size: 1.2em;
+    }
+    .artiest.informatie h2 {
+        font-size: 3em;
+    }
+    .artiest-footer {
+        padding: 170px;
+    }
 @media screen and (max-width: 1000px) {
     nav.hoofdmenu ul li a {
         font-size: 15px;
     }
-
     input[type="text"]::-webkit-input-placeholder {
         font-size: 15px;
     }
@@ -510,6 +546,18 @@ input[type="submit"] {
     i.fas.fa-chevron-down.sub {
         margin-left: 303px;
     }
+    .artiest.informatie h3 {
+        font-size: 1em;
+    }
+    .artiest.informatie h2 {
+        font-size: 2em;
+    }
+    .artiest-footer {
+        padding: 60px;
+    }
+    section.artiest-last {
+        flex-wrap: wrap;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -520,8 +568,19 @@ input[type="submit"] {
     i.fas.fa-chevron-down {
         margin-left: 140px;
     }
-    i.fas.fa-chevron-down.sub {
-        margin-left: 240px;
+    .artiest.informatie {
+        width: 90%;
+        margin-top: 20px;
+    }
+    .artiest.informatie h2 {
+        font-size: 2.5em;
+        line-height: 1.2em;
+    }
+    section.artiest-last {
+        width: 90%;
+    }
+    #video-2 {
+        border: 5px solid #4CCF66;
     }
 }
 
@@ -529,9 +588,15 @@ input[type="submit"] {
 
 /*https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme*/
 @media (prefers-color-scheme: dark) {
-  main   { background:  #000; color: #fff; }
+    main { 
+        background:  #000; 
+        color: #fff; 
+    }
 }
 
 @media (prefers-color-scheme: light) {
-  main  { background: #fff; color:  #000; }
+  main { 
+      background: #fff; 
+      color: #000; 
+    }
 }

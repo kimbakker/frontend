@@ -17,14 +17,26 @@ function uitklapMenuMuziek() {
 document.querySelector('.muziek').addEventListener("click", uitklapMenuMuziek);
 
 
-var favoriet = document.querySelector('.fave');
+//var favoriet = document.querySelector('.fave');
+//
+//function like() {
+//    favoriet.setAttribute('src', 'images/hartje-rood.png');
+//}
+//
+//favoriet.addEventListener('click', like);
 
-function like() {
-    favoriet.setAttribute('src', 'images/hartje-rood.png');
+
+var hartjes = document.getElementsByClassName('fave');
+for (var i = 0; i < hartjes.length; i++) {
+    var hartje = hartjes[i];
+    hartje.onclick = function () {
+        if (this.src == origin + "/images/hartje-rood.png") {
+            this.src = "images/hartje.png";
+        } else {
+            this.src = "images/hartje-rood.png";
+        }
+    }
 }
-
-favoriet.addEventListener('click', like);
-
 
 
 
