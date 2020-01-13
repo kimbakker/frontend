@@ -106,7 +106,7 @@ nav.hoofdmenu ul li a.active:after {
     height: auto;
 }
 input[type="text"] {
-    background: none;
+/*    background: none;*/
     font-family: 'Open Sans', sans-serif;
     border: none;
     color: #fff;
@@ -357,6 +357,9 @@ iframe.twenty-video {
 
 /*FORM*/
 
+main.tickets {
+    text-align: left;
+}
 form section {
     display: flex;
 }
@@ -366,49 +369,60 @@ fieldset {
     color: #fff;
     border: none;
 }
-fieldset:first-child, fieldset:last-child {
+fieldset:first-child {
     background: #4CCF66;
 }
+fieldset:last-child {
+    background: #0125CC;
+}
 legend {
-    padding-top: 36px;
+    padding-top: 50px;
     font-weight: bold;
     font-size: 18px;
 }
-/*
-.reveal-if-active {
-  opacity: 0;
-  max-height: 0;
-  overflow: hidden;
-}
-input[type="radio"]:checked ~ .reveal-if-active {
-  opacity: 1;
-  max-height: 100px;  little bit of a magic number :( 
-  overflow: visible;
-}
-*/
 /*https://developer.mozilla.org/en-US/docs/Web/CSS/:checked*/
-input[type="radio"]:checked {
-  box-shadow: 0 0 0 3px #fff;
+fieldset:first-child input[type="radio"]:checked {
+    box-shadow: 0 0 0 1.5px #0125CC;
+    transition: all .3s ease;
 }
-input:focus {
-  background: white;
-  color: #0125CC;
+fieldset:last-child input[type="radio"]:checked {
+    box-shadow: 0 0 0 1.5px #4CCF66;
+    transition: all .3s ease;
+}
+fieldset:first-child input:focus {
+    color: #0125CC;
+    border: 2px solid #0125CC;
+    transition: all .3s ease;
+}
+fieldset:last-child input:focus {
+    color: #4CCF66;
+    border: 2px solid #4CCF66;
+    transition: all .3s ease;
 }
 input[type="submit"] {
-    margin-top: 10px;
-    display: inline-block;
     background: #fff;
-    padding: 10px 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
     color: #0125CC;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 800;
     border: 2px solid #0125CC;
     font-size: 15px;
+    display: block;
+    margin: 20px auto;
+    transition: padding-top .3s ease-in .3s, padding-bottom .3s ease-out .2s, padding-left .3s ease-in .3s, padding-right .3s ease-out .2s; 
 }
-fieldset.aantal-tickets {
-    width: 35%;
-    height: 100px;
+input[type="submit"]:hover {
+    border: 2px solid #0125CC;
+    font-size: 15px;
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 150px;
+    padding-right: 150px;
 }
 fieldset p {
     text-align: left;
@@ -420,7 +434,24 @@ fieldset:valid p.feedback {
   display: block;
   padding: .25em;
   color: white;
-  background: #4ccf66;
+  background: #0125CC;
+}
+#huisnummer {
+    width: 40px;
+}
+#toevoeging {
+    width: 40px;
+}
+section fieldset p label {
+    width: 140px;
+    display: inline-block;
+    text-align: right;
+}
+.toev {
+    width: 110px;
+}
+#postcode {
+    width: 60px;
 }
 
 
