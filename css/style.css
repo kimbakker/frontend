@@ -413,7 +413,7 @@ input[type="submit"] {
     font-size: 15px;
     display: block;
     margin: 20px auto;
-    transition: padding-top .3s ease-in .3s, padding-bottom .3s ease-out .2s, padding-left .3s ease-in .3s, padding-right .3s ease-out .2s; 
+    transition: padding-top .3s ease-in .3s, padding-bottom .3s ease-out .2s, padding-left .3s ease-in .3s, padding-right .3s ease-out .2s, transform .3s ease-out .2s; 
 }
 input[type="submit"]:hover {
     border: 2px solid #0125CC;
@@ -423,6 +423,7 @@ input[type="submit"]:hover {
     padding-bottom: 50px;
     padding-left: 150px;
     padding-right: 150px;
+    transform: translateX(100%);
 }
 fieldset p {
     text-align: left;
@@ -436,6 +437,9 @@ fieldset:valid p.feedback {
   color: white;
   background: #0125CC;
 }
+fieldset:valid p.feedback.groen {
+  background: #4CCF66;
+}
 #huisnummer {
     width: 40px;
 }
@@ -446,6 +450,7 @@ section fieldset p label {
     width: 140px;
     display: inline-block;
     text-align: right;
+    padding-right: 6px;
 }
 .toev {
     width: 110px;

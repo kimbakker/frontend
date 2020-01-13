@@ -50,7 +50,7 @@
     </header>
     <main class="tickets">
         <!--       https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form-->
-        <form>
+        <form action="ingestuurd.html">
             <section>
                 <fieldset>
                     <legend>Soort Ticket</legend>
@@ -113,15 +113,16 @@
                 <fieldset>
                     <legend>Adresgegevens</legend>
                     <p><label for="straatnaam">Straatnaam</label>
-                        <input name="text" id="straatnaam" size="30" required></p>
+                        <input name="text" id="straatnaam" size="30" placeholder="straatnaam" required></p>
                     <p><label for="huisnummer">Huisnummer</label>
-                        <input type="number" id="huisnummer" name="huisnummer" min="1" required>
+                        <input type="number" id="huisnummer" name="huisnummer" min="1" placeholder="00" required>
                         <label for="toevoeging" class="toev">Toev.</label>
-                        <input type="text" id="toevoeging" name="toevoeging"></p>
+                        <input type="text" id="toevoeging" name="toevoeging" placeholder="A"></p>
                     <p><label for="woonplaats">Woonplaats</label>
-                        <input name="text" id="woonplaats" size="30" required></p>
+                        <input name="text" id="woonplaats" size="30" placeholder="Woonplaats" required></p>
                     <p><label for="postcode">Postcode</label>
-                        <input name="text" id="postcode" size="30" required></p>
+                        <input name="text" id="postcode" size="30" placeholder="1234AB" required></p>
+                    <p class="feedback groen">Dit gedeelte van het formulier is goed ingevuld.</p>
                 </fieldset>
             </section>
             <input type="submit" value="Verzenden">
