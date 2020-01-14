@@ -17,27 +17,20 @@ https://css-tricks.com/solved-with-css-dropdown-menus/
 - Checkbox:
 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox-
 https://developer.mozilla.org/en-US/docs/Web/CSS/:checked
-
-CCS animatie hover menu:
+- CCS animatie hover menu:
 https://codepen.io/martinwolf/pen/eNNdme
-
-Icon peil omhoog:
+- Icon peil omhoog:
 https://fontawesome.com/icons/arrow-up?style=solid
-
-Icon peil omlaag:
+- Icon peil omlaag:
 https://fontawesome.com/icons/chevron-down?style=solid
-
-Flexbox elementen:
+- Flexbox elementen:
 https://css-tricks.com/snippets/css/a-guide-to-flexbox/
-
-Darkmode:
+- Darkmode:
 https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme
-
-Video:
+- Video:
 https://developer.mozilla.org/nl/docs/Web/Guide/HTML/HTML5_audio_en_video_gebruiken
-
-Forms:
-https://developer.mozilla.org/en-US/docs/Learn/Forms/How_to_structure_a_web_form
+- Forms:
+https://developer.mozilla.org/en-US/docs/Learn/Forms/How_to_structure_a_web_form / 
 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form
 
 
