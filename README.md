@@ -1,5 +1,5 @@
 # frontend
-Voor het vak front-enddevelopment heb ik mijn herontwerp van IA omgezet naar html/css en Javascript.
+Voor het vak Frontend Development heb ik mijn herontwerp van Informatie Architectuur omgezet naar html/css en Javascript.
 
 **Live versie**
 https://kimbakker.github.io/frontend/
