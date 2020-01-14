@@ -5,9 +5,8 @@ https://kimbakker.github.io/frontend/
 
 **Feedback momenten**
 
-Peerfeedback 1: https://kimbakker.github.io/frontend/feedback/peerfeedback-1.pdf
-
-Peerfeedback 2: https://kimbakker.github.io/frontend/feedback/peerfeedback-2.pdf
+- Peerfeedback 1: https://kimbakker.github.io/frontend/feedback/peerfeedback-1.pdf
+- Peerfeedback 2: https://kimbakker.github.io/frontend/feedback/peerfeedback-2.pdf
 
 **Bronnen**
 
