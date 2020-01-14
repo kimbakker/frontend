@@ -3,7 +3,7 @@ Mijn Lowlands website
 
 https://kimbakker.github.io/frontend/
 
-Feedback momenten
+**Feedback momenten**
 
 Peerfeedback 1: https://kimbakker.github.io/frontend/feedback/peerfeedback-1.pdf
 
