@@ -1,4 +1,4 @@
-# frontend
+# Frontend Development | Januari 2020
 Voor het vak Frontend Development heb ik mijn herontwerp van Informatie Architectuur omgezet naar html/css en Javascript.
 
 **Live versie**
