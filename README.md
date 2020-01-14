@@ -10,13 +10,11 @@ https://kimbakker.github.io/frontend/
 
 **Bronnen**
 
-Logo Lowlands, icon hart, icon geluid, artiesten afbeeldingen, content:
+- Logo Lowlands, icon hart, icon geluid, artiesten afbeeldingen, content:
 https://lowlands.nl/
-
-Dropdown menu:
+- Dropdown menu:
 https://css-tricks.com/solved-with-css-dropdown-menus/
-
-Checkbox:
+- Checkbox:
 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox-
 https://developer.mozilla.org/en-US/docs/Web/CSS/:checked
 
