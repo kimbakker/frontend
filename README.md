@@ -9,7 +9,7 @@ Peerfeedback 1: https://kimbakker.github.io/frontend/feedback/peerfeedback-1.pdf
 
 Peerfeedback 2: https://kimbakker.github.io/frontend/feedback/peerfeedback-2.pdf
 
-Bronnen
+**Bronnen**
 
 Logo Lowlands, icon hart, icon geluid, artiesten afbeeldingen, content:
 https://lowlands.nl/
