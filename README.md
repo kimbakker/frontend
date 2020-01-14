@@ -30,7 +30,7 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme
 - Video:
 https://developer.mozilla.org/nl/docs/Web/Guide/HTML/HTML5_audio_en_video_gebruiken
-- Forms:
+- Form:
 https://developer.mozilla.org/en-US/docs/Learn/Forms/How_to_structure_a_web_form / 
 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form
 - Fonts:
