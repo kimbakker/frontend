@@ -395,8 +395,16 @@ fieldset:first-child input:focus {
     transition: all .3s ease;
 }
 fieldset:last-child input:focus {
-    color: #4CCF66;
-    border: 2px solid #4CCF66;
+    color: #5069dd;
+    border: 2px solid #5069dd;
+    transition: all .3s ease;
+}
+fieldset:first-child input:valid {
+    border: 2px solid #26a840;
+    transition: all .3s ease;
+}
+fieldset:last-child input:valid {
+    border: 2px solid #26a840;
     transition: all .3s ease;
 }
 input[type="submit"] {
