@@ -6,7 +6,7 @@ https://kimbakker.github.io/frontend/
 
 **Feedback momenten**
 
-- Peerfeedback 1: https://kimbakker.github.io/frontend/feedback/peerfeedback-1.pdf "target="_blank"
+- Peerfeedback 1: https://kimbakker.github.io/frontend/feedback/peerfeedback-1.pdf
 - Peerfeedback 2: https://kimbakker.github.io/frontend/feedback/peerfeedback-2.pdf
 
 **Bronnen**
@@ -37,9 +37,6 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form
 https://fonts.google.com/specimen/Open+Sans / https://fonts.google.com/specimen/Coiny
 - Read me opmaken:
 https://help.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax#headings
-
-
-[go](http://stackoverflow.com){:target="_blank"}.
 
 
 
