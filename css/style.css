@@ -375,6 +375,13 @@ fieldset:first-child {
 fieldset:last-child {
     background: #0125CC;
 }
+fieldset ul {
+    padding: 0;
+    margin: 0;   
+}
+fieldset ul li {
+    display: inline-block;
+}
 legend {
     padding-top: 50px;
     font-weight: bold;
@@ -499,8 +506,11 @@ section fieldset p label {
     .artiest h2 {
         font-size: 20px;
     }
+    form section {
+        flex-wrap: wrap;
+    }
 }
-
+    
 @media screen and (max-width: 850px) {
     nav.hoofdmenu ul li {
         padding: 0px 0;
@@ -625,6 +635,19 @@ section fieldset p label {
     }
     #video-2 {
         border: 5px solid #4CCF66;
+    }
+    fieldset ul li {
+        display: block;
+    }
+    section fieldset p label {
+        width: 140px;
+    }
+}
+@media screen and (max-width: 400px) {
+
+    section fieldset p label {
+        width: 0;
+        display: block;
     }
 }
 

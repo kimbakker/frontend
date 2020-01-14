@@ -54,36 +54,41 @@
             <section>
                 <fieldset>
                     <legend>Soort Ticket</legend>
-                    <input type="radio" name="ticket" id="festivalticket">
-                    <label for="festivalticket">Festival ticket</label>
-                    <input type="radio" id="groepsticket" name="ticket" value="groepsticket">
-                    <label for="festivalticket">Groepsticket</label>
-                    <input type="radio" id="gespreid" name="ticket" value="gespreid">
-                    <label for="festivalticket">Gespreid betalen</label>
+                    <ul><li><input type="radio" name="ticket" id="festivalticket">
+                        <label for="festivalticket">Festival ticket</label></li>
+                        <li><input type="radio" id="groepsticket" name="ticket" value="groepsticket">
+                            <label for="festivalticket">Groepsticket</label></li>
+                        <li><input type="radio" id="gespreid" name="ticket" value="gespreid">
+                            <label for="festivalticket">Gespreid betalen</label></li>
+                    </ul>
                 </fieldset>
                 <fieldset>
                     <legend>Verblijf</legend>
-                    <input type="radio" id="groepscamping" name="verblijf" value="groepscamping">
-                    <label for="groepscamping">Groepscamping</label>
-                    <input type="radio" id="camper" name="verblijf" value="camper">
-                    <label for="camper">Camper Camping</label>
-                    <input type="radio" id="glamm" name="verblijf" value="glamm">
-                    <label for="glamm">Gllam-camp</label>
-                    <input type="radio" id="ntv" name="verblijf" value="ntv">
-                    <label for="ntv">n.v.t.</label>
+                    <ul>
+                        <li><input type="radio" id="groepscamping" name="verblijf" value="groepscamping">
+                            <label for="groepscamping">Groepscamping</label></li>
+                        <li><input type="radio" id="camper" name="verblijf" value="camper">
+                            <label for="camper">Camper Camping</label></li>
+                        <li><input type="radio" id="glamm" name="verblijf" value="glamm">
+                            <label for="glamm">Gllam-camp</label></li>
+                        <li><input type="radio" id="ntv" name="verblijf" value="ntv">
+                            <label for="ntv">n.v.t.</label></li>
+                    </ul>
                 </fieldset>
             </section>
             <section>
                 <fieldset>
                     <legend>Vervoer</legend>
-                    <input type="radio" id="parkeren" name="vervoer" value="parkeren">
-                    <label for="parkeren">Parkeerticket</label>
-                    <input type="radio" id="bus" name="vervoer" value="bus">
-                    <label for="bus">Bus Service</label>
-                    <input type="radio" id="trein" name="vervoer" value="trein">
-                    <label for="trein">Trein</label>
-                    <input type="radio" id="ntv" name="vervoer" value="ntv">
-                    <label for="ntv">n.v.t.</label>
+                    <ul>
+                        <li><input type="radio" id="parkeren" name="vervoer" value="parkeren">
+                            <label for="parkeren">Parkeerticket</label></li>
+                        <li><input type="radio" id="bus" name="vervoer" value="bus">
+                            <label for="bus">Bus Service</label></li>
+                        <li><input type="radio" id="trein" name="vervoer" value="trein">
+                            <label for="trein">Trein</label></li>
+                        <li><input type="radio" id="ntv" name="vervoer" value="ntv">
+                            <label for="ntv">n.v.t.</label></li>
+                    </ul>
                 </fieldset>
                 <fieldset class="aantal-tickets">
                     <legend>Aantal tickets</legend>
@@ -116,11 +121,11 @@
                         <input name="text" id="straatnaam" size="30" placeholder="Straatnaam" required></p>
                     <p><label for="huisnummer">Huisnummer</label>
                         <input type="number" id="huisnummer" name="huisnummer" min="1" placeholder="00" required>
-                    <p><label for="woonplaats">Woonplaats</label>
-                        <input name="text" id="woonplaats" size="30" placeholder="Woonplaats" required></p>
-                    <p><label for="postcode">Postcode</label>
-                        <input name="text" id="postcode" size="30" placeholder="1234AB" required></p>
-                    <p class="feedback groen">Dit gedeelte van het formulier is goed ingevuld.</p>
+                        <p><label for="woonplaats">Woonplaats</label>
+                            <input name="text" id="woonplaats" size="30" placeholder="Woonplaats" required></p>
+                        <p><label for="postcode">Postcode</label>
+                            <input name="text" id="postcode" size="30" placeholder="1234AB" required></p>
+                        <p class="feedback groen">Dit gedeelte van het formulier is goed ingevuld.</p>
                 </fieldset>
             </section>
             <input type="submit" value="Verzenden">
