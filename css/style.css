@@ -55,7 +55,6 @@ h2.categorie-titel {
 header {
     background: #4CCF66;
     text-align: center;
-/*    padding-bottom: 30px;*/
 }
 nav.hoofdmenu {
     background: #0125CC;
@@ -120,15 +119,6 @@ input[type="text"]::-webkit-input-placeholder {
 }
 .fa-search {
     color: #fff;
-}
-
-
-/*HOME*/
-
-.items-home {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap:
 }
 
 
@@ -363,6 +353,12 @@ main.tickets {
 form section {
     display: flex;
 }
+form section fieldset p label {
+    width: 140px;
+    display: inline-block;
+    text-align: right;
+    padding-right: 6px;
+}
 fieldset {
     width: 100%;
     background: #0125CC;
@@ -374,6 +370,9 @@ fieldset:first-child {
 }
 fieldset:last-child {
     background: #0125CC;
+}
+fieldset p {
+    text-align: left;
 }
 fieldset ul {
     padding: 0;
@@ -414,6 +413,30 @@ fieldset:last-child input:valid {
     border: 2px solid #26a840;
     transition: all .3s ease;
 }
+fieldset:invalid p.feedback {
+  display:none;
+}
+fieldset:valid p.feedback {
+  display: block;
+  padding: .25em;
+  color: white;
+  background: #0125CC;
+}
+fieldset:valid p.feedback.groen {
+  background: #4CCF66;
+}
+#huisnummer {
+    width: 40px;
+}
+#toevoeging {
+    width: 40px;
+}
+.toev {
+    width: 104px;
+}
+#postcode {
+    width: 60px;
+}
 input[type="submit"] {
     background: #fff;
     padding-top: 10px;
@@ -440,40 +463,6 @@ input[type="submit"]:hover {
     padding-right: 150px;
     transform: translateX(100%);
 }
-fieldset p {
-    text-align: left;
-}
-fieldset:invalid p.feedback {
-  display:none;
-}
-fieldset:valid p.feedback {
-  display: block;
-  padding: .25em;
-  color: white;
-  background: #0125CC;
-}
-fieldset:valid p.feedback.groen {
-  background: #4CCF66;
-}
-#huisnummer {
-    width: 40px;
-}
-#toevoeging {
-    width: 40px;
-}
-section fieldset p label {
-    width: 140px;
-    display: inline-block;
-    text-align: right;
-    padding-right: 6px;
-}
-.toev {
-    width: 104px;
-}
-#postcode {
-    width: 60px;
-}
-
 
 
 /*RESPONSIVE*/
@@ -496,6 +485,9 @@ section fieldset p label {
     .artiest-footer {
         padding: 170px;
     }
+    i.fas.fa-chevron-down {
+        margin-left: 34px;
+    }
 @media screen and (max-width: 1000px) {
     nav.hoofdmenu ul li a {
         font-size: 15px;
@@ -505,9 +497,24 @@ section fieldset p label {
     }
     .artiest h2 {
         font-size: 20px;
+        margin: 0 0 10px;
+    }
+    .artiest h3 {
+        margin-bottom: 0px;
+        font-size: 11px;
     }
     form section {
         flex-wrap: wrap;
+    }
+    .categorie-naam {
+        font-size: 10px;
+    }
+    h2.categorie-titel {
+        font-size: 20px;
+    }
+    i.fas.fa-chevron-down {
+        font-size: 30px;
+        margin-left: 10px;
     }
 }
     
@@ -515,7 +522,6 @@ section fieldset p label {
     nav.hoofdmenu ul li {
         padding: 0px 0;
     }
-
     nav.hoofdmenu ul li a {
         font-size: 12px;
     }
@@ -528,6 +534,9 @@ section fieldset p label {
     }
     .artiest {
         width: 100%;
+    }
+    .artiest:last-child {
+        margin-bottom: 70px;
     }
     .artiest h2 {
         font-size: 35px;    
@@ -546,12 +555,10 @@ section fieldset p label {
     nav.hoofdmenu {
         display: none;
     }
-
     .hoofdmenu.responsive {
         display: inherit;
         background: #0125CC;
     }
-
     li.menu-meer {
         display: block;
         transition-duration: 0.5s;
@@ -597,9 +604,6 @@ section fieldset p label {
     i.fas.fa-chevron-down {
         margin-left: 204px;
     }
-    i.fas.fa-chevron-down.sub {
-        margin-left: 303px;
-    }
     .artiest.informatie h3 {
         font-size: 1em;
     }
@@ -611,6 +615,9 @@ section fieldset p label {
     }
     section.artiest-last {
         flex-wrap: wrap;
+    }
+    .categorie-naam {
+        font-size: 15px;
     }
 }
 
