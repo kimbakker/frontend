@@ -39,6 +39,8 @@ https://fonts.google.com/specimen/Open+Sans / https://fonts.google.com/specimen/
 https://help.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax#headings
 
 
+[go](http://stackoverflow.com){:target="_blank"}.
+
 
 
 
