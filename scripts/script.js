@@ -25,7 +25,7 @@ document.querySelector('.muziek').addEventListener("click", uitklapMenuMuziek);
 //
 //favoriet.addEventListener('click', like);
 
-
+//Tim de vos
 var hartjes = document.getElementsByClassName('fave');
 for (var i = 0; i < hartjes.length; i++) {
     var hartje = hartjes[i];
@@ -37,30 +37,3 @@ for (var i = 0; i < hartjes.length; i++) {
         }
     }
 }
-
-
-
-//http://cmd.camp/2017%20javascript/front-end%20coding/4-extra-tips-2
-//Koen Borghols  setAttribute 
-//
-//var favoriet = document.querySelectorAll('.fave');
-//
-//forEach(favoriet, function ()) {
-//
-//    function like() {
-//        favoriet.setAttribute.('src', 'images/hartje-rood.png');
-//    }
-//}
-//favoriet.addEventListener('click', like);
-
-
-
-
-//var navItems = document.querySelectorAll("#main-nav a");
-//
-//forEach(navItems, function(i, el) {
-//  el.addEventListener("click", function() {
-//    document.querySelector("#main-nav .active").classList.remove("active");
-//    this.classList.add("active");
-//  })
-//});
